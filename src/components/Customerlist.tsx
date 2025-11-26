@@ -16,7 +16,7 @@ function Customerlist() {
 
     const fetchCustomers = () => {
         getCustomers()
-        .then(data => setCustomers(data.embedded.customers))
+        .then(data => setCustomers(data._embedded.customers))
         .catch(err => console.error(err))
     }
 
