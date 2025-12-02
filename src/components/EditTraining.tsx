@@ -18,6 +18,7 @@ export default function EditTraining({ fetchTrainings, trainingRow }: EditTraini
         date: "",
         duration: "",
         activity: "",
+        customer: "",
     })
 
     const handleClickOpen = () => {
@@ -26,6 +27,7 @@ export default function EditTraining({ fetchTrainings, trainingRow }: EditTraini
             date: trainingRow.date,
             duration: trainingRow.duration,
             activity: trainingRow.activity,
+            customer: trainingRow.customer,
         })
     };
 
@@ -35,6 +37,7 @@ export default function EditTraining({ fetchTrainings, trainingRow }: EditTraini
             date: "",
             duration: "",
             activity: "",
+            customer: "",
         })
     };
 

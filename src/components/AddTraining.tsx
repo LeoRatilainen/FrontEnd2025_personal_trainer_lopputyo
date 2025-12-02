@@ -26,8 +26,8 @@ export default function AddTraining({ fetchTraining }: AddTrainingProps) {
     })
 
         useEffect(() => {
-            getCustomers().then(data => setCustomers(data._embedded.customers));
-        })
+        getCustomers().then(data => setCustomers(data._embedded.customers));
+        }, []);
 
     const handleClickOpen = () => {
         setOpen(true);
@@ -68,6 +68,7 @@ export default function AddTraining({ fetchTraining }: AddTrainingProps) {
                 <DialogTitle>Add new Training</DialogTitle>
                 <DialogContent>
                     <TextField
+                        type="datetime-local"
                         margin="dense"
                         required
                         label="date"

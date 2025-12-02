@@ -40,3 +40,32 @@
 .read-the-docs {
   color: #888;
 }
+.appbar {
+  background-color: #1976d2 !important;
+}
+
+.MuiTab-root {
+  color: #000000;
+  font-weight: bold;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.MuiTab-root.Mui-selected {
+  color: #ffffff !important;
+  font-weight: bold;
+}
+
+.MuiTab-root:hover:not(.Mui-selected) {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.MuiTabs-indicator {
+  background-color: #ffffff !important;
+  height: 4px;
+}
+
+.app-title {
+  color: #000000;
+}

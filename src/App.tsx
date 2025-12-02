@@ -9,6 +9,8 @@ import Tab from "@mui/material/Tab";
 
 import Traininglist from "./components/Traininglist";
 import Customerlist from "./components/Customerlist";
+import CalendarView from "./components/CalendarView";
+import "./App.css";
 
 function App() {
   const [tab, setTab] = useState(0);
@@ -21,23 +23,23 @@ function App() {
     <Container maxWidth="lg">
       <CssBaseline />
 
-      {/* App bar */}
-      <AppBar position="static">
+      <AppBar position="static" className="appbar">
         <Toolbar>
-          <Typography variant="h6">Personal trainer App</Typography>
+          <Typography variant="h6" className="app-title">
+            Personal trainer App
+          </Typography>
         </Toolbar>
-
-        {/* Tabs inside AppBar */}
         <Tabs value={tab} onChange={handleTabChange} centered>
           <Tab label="Customers" />
           <Tab label="Trainings" />
+          <Tab label="Calendar View" />
         </Tabs>
       </AppBar>
 
-      {/* Content depending on tab */}
       <div style={{ marginTop: "2rem" }}>
         {tab === 0 && <Customerlist />}
         {tab === 1 && <Traininglist />}
+        {tab === 2 && <CalendarView />}
       </div>
     </Container>
   );

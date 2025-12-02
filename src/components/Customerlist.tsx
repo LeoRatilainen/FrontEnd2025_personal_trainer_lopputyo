@@ -6,7 +6,6 @@ import { getCustomers, deleteCustomer } from '../Customerapi';
 import Button from '@mui/material/Button';
 import AddCustomer from './AddCustomer';
 import EditCustomer from './EditCustomer';
-import Tabs from './Tabs';
 
 function Customerlist() {
     const [customers, setCustomers] = useState<Customer[]>([]);
