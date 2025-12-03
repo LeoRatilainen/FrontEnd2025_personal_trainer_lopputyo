@@ -9,7 +9,6 @@ const Tabs: React.FC<TabProps> = ({ tabs }) => {
 
   return (
     <div>
-      {/* Tab buttons */}
       <div style={{ display: "flex", gap: "10px" }}>
         {tabs.map((tab, index) => (
           <button
@@ -27,7 +26,6 @@ const Tabs: React.FC<TabProps> = ({ tabs }) => {
         ))}
       </div>
 
-      {/* Active tab content */}
       <div style={{ marginTop: "20px" }}>
         {tabs[activeIndex].content}
       </div>

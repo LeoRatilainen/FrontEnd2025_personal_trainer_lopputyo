@@ -76,6 +76,7 @@ export default function AddTraining({ fetchTraining }: AddTrainingProps) {
                         onChange={event => setTraining({...training, date: event.target.value})}
                         fullWidth
                         variant="standard"
+                        InputLabelProps={{ shrink: true }}
                     />
                     <TextField
                         margin="dense"
